@@ -166,3 +166,10 @@ then add the following code after `<VirtualHost *:80>`
 ```
 sudo timedatectl set-timezone UTC
 ```
+### 7. Updating Google Sign-in
+
+Add the follwing links to `Authorized JavaScript origins`
+```
+http://52.24.142.67
+http://ec2-52-24-142-67.us-west-2.compute.amazonaws.com
+```
