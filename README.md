@@ -7,34 +7,35 @@ Host Healthy Recipes Web App on Amazon Lightsail.
 - **IP Address:** http://52.24.142.67
 - **Public DNS:** http://ec2-52-24-142-67.us-west-2.compute.amazonaws.com/
 - **SSH Port**: 2200
+- **Project Repo.**: https://github.com/Sara-Kassem/Healthy-Recipes-AWS-Version.git
 
 ## Steps Made for Hosting the Application:
 
 ### 1. Adding user `grader`:
 
-* Create a new user
+Create a new user
 
 ```
 sudo adduser grader
 sudo nano /etc/sudoers.d/grader
 ```
-* Then add this line to the file
+Then add this line to the file
 ```
 grader ALL=(ALL) NOPASSWD:ALL
 ```
 
-* Generate Key-Pairs
+Generate Key-Pairs
 ```
 ssh-keygen
 ```
-* After logging as `grader` install the public key:
+After logging as `grader` install the public key:
 ```
 sudo nano .ssh/authorized_keys
 sudo chmod 700 .ssh
 sudo chmod 664 .ssh
 ```
 
-* Force Key Based Authentication:
+Force Key Based Authentication:
 ```
 sudo nano /etc/ssh/sshd_config
 ```
@@ -42,7 +43,7 @@ and change `passwordAuthenicaition` to `no` then restart `ssh` using:
 ```
 sudo service ssh restart
 ```
-* Change default ssh port from `22` to `2200`:
+Change default ssh port from `22` to `2200`:
 ```
 sudo nano /etc/ssh/sshd_config
 ```
