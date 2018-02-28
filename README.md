@@ -64,7 +64,7 @@ sudo ufw allow ntp
 sudo ufw enable
 ```
 
-### 3. Intall the Requirements
+### 3. Installing the Requirements
 
 ```
 sudo apt-get install python-psycopg2 python-flask
@@ -86,7 +86,7 @@ Then install WSGI
 sudo apt-get install libapache2-mod-wsgi-py3
 ```
 
-### 5. Clone the project files
+### 5. Cloning the project files
 First install `git`:
 ```
 sudo apt-get install git
@@ -104,7 +104,7 @@ Clone the repo:
 sudo git clone https://github.com/Sara-Kassem/Healthy-Recipes-AWS-Version.git healthyRecipes
 ```
 
-### 5. Configure Apache to serve the app:
+### 5. Configuring Apache to serve the app:
 
 Create a WSGI app:
 ```
@@ -162,7 +162,7 @@ then add the following code after `<VirtualHost *:80>`
 
 ```
   
-### 6. Set the timezone to UTC
+### 6. Setting the timezone to UTC
 ```
 sudo timedatectl set-timezone UTC
 ```
