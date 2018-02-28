@@ -51,7 +51,10 @@ then resatart `ssh` service
 ```
 sudo service ssh force-reload
 ```
-
+Now the user `grader` can log in using this command
+```
+ssh -p 2200 -i "ali-key.pem" grader@ec2-52-24-142-67.us-west-2.compute.amazonaws.com
+```
 ### 2. Starting Firewall:
 
 ```
